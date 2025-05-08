@@ -42,3 +42,18 @@ console.log(typeof undefinedVar); // Saída: undefined
 
 string = "Testando"; // Alterando o valor da variável string
 console.log(string); // Saída: Testando
+
+// Tipos de variáveis referenciadas
+let object = { 
+    name: "Leonardo", 
+    age: 30 
+}; // Objeto
+console.log(object); // Saída: { name: 'Leonardo', age: 30 }
+console.log(typeof object); // Saída: object
+// object.name = "Andrade"; // Alterando o valor da propriedade name do objeto
+console.log(object.name); // Saída: Leonardo
+
+let array = [1, 2, 3, 4, 5]; // Array
+console.log(array); // Saída: [1, 2, 3, 4, 5]
+console.log(typeof array); // Saída: object
+console.log(array[0]); // Saída: 1
