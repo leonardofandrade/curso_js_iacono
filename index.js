@@ -68,3 +68,90 @@ function salesStatus(status, totalSales = 0) { // Função com parâmetros
 salesStatus("Em andamento", 123); // Saída: Status: Em andamento
 salesStatus("Concluído"); // Saída: Status: Concluído
 salesStatus("Cancelado"); // Saída: Status: Cancelado
+
+function percentage10(price) {
+    return price - price * 0.1; // Retorna 10% do preço
+}
+
+console.log(percentage10(100)); // Saída: 90
+// === Operador de comparação estrita (===) compara o valor e o tipo
+// == Operador de comparação solta (==) compara apenas o valor
+console.log(1 === 2); // Saída: false
+console.log(1 === '1'); // Saída: true
+console.log(1 == 1); // Saída: true
+
+// ternary operator (operador ternário) - operador condicional
+let age2 = 18;
+let canDrive = (age2 >= 18) ? "Pode dirigir" : "Não pode dirigir"; // Se age2 for maior ou igual a 18, pode dirigir, senão não pode
+console.log(canDrive); // Saída: Pode dirigir
+
+
+// Operador lógico AND (&&) e OR (||)
+let a = true;
+let b = false;
+console.log(a && b); // Saída: false (ambos devem ser verdadeiros para retornar true)
+console.log(a || b); // Saída: true (pelo menos um deve ser verdadeiro para retornar true)
+
+// Operadores Lógicos com strings
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1 && str2); // Saída: World (retorna o último valor avaliado como verdadeiro)
+console.log(str1 || str2); // Saída: Hello (retorna o primeiro valor avaliado como verdadeiro)
+console.log(str1 + str2); // Saída: HelloWorld (concatena as duas strings)
+console.log(str1 + " " + str2); // Saída: Hello World (concatena as duas strings com espaço)
+
+// Operador de negação (!)
+let isTrue = true;
+let isFalse = false;
+console.log(!isTrue); // Saída: false
+console.log(!isFalse); // Saída: true
+
+
+// Operador de negação dupla (!!)
+let isTrue2 = true;
+let isFalse2 = false;
+let isUndefined = undefined;
+let isNull = null;
+let isNaN = NaN;
+console.log(!!isTrue2); // Saída: true
+console.log(!!isFalse2); // Saída: false
+console.log(!!isUndefined); // Saída: false
+console.log(!!isNull); // Saída: false
+console.log(!!isNaN); // Saída: false
+
+// If e Else
+let age3 = 25;
+if (age3 >= 18) {
+    console.log("Maior de idade"); // Saída: Maior de idade
+}
+else {
+    console.log("Menor de idade"); // Saída: Menor de idade
+}
+
+// Switch Case
+let day = 2;
+switch (day) {
+    case 1:
+        console.log("Domingo"); // Saída: Domingo
+        break;
+    case 2:
+        console.log("Segunda-feira"); // Saída: Segunda-feira
+        break;
+    case 3:
+        console.log("Terça-feira"); // Saída: Terça-feira
+        break;
+    case 4:
+        console.log("Quarta-feira"); // Saída: Quarta-feira
+        break;
+    case 5:
+        console.log("Quinta-feira"); // Saída: Quinta-feira
+        break;
+    case 6:
+        console.log("Sexta-feira"); // Saída: Sexta-feira
+        break;
+    case 7:
+        console.log("Sábado"); // Saída: Sábado
+        break;
+    default:
+        console.log("Dia inválido"); // Saída: Dia inválido
+}
