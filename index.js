@@ -56,4 +56,15 @@ console.log(object.name); // Saída: Leonardo
 let array = [1, 2, 3, 4, 5]; // Array
 console.log(array); // Saída: [1, 2, 3, 4, 5]
 console.log(typeof array); // Saída: object
+array[1] = 10; // Alterando o valor do índice 1 do array
 console.log(array[0]); // Saída: 1
+console.log(array); // Saída: [1, 2, 3, 4, 5]
+
+function salesStatus(status, totalSales = 0) { // Função com parâmetros
+    console.log("Total de vendas: " + totalSales); // Saída: Total de vendas: 0
+    console.log("Status: " + status); // Saída: Status: [status]
+}
+
+salesStatus("Em andamento", 123); // Saída: Status: Em andamento
+salesStatus("Concluído"); // Saída: Status: Concluído
+salesStatus("Cancelado"); // Saída: Status: Cancelado
